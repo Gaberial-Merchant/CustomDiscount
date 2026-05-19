@@ -1114,7 +1114,8 @@ function setupCheckoutElement(el) {
         if (isInternational) {
             event.preventDefault();
             event.stopPropagation();
-            window.location.href = `/apps/myapp?CustomCheckout=DiscountCheckout&shop=${shop}`;
+             window.location.href = `/custom-checkout?shopName=${shop}`;
+            //window.location.href = `/apps/myapp?CustomCheckout=DiscountCheckout&shop=${shop}`;
             return false;
         }
         if (originalClick) {
